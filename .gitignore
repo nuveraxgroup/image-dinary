@@ -1,0 +1,12 @@
+## Compiled JavaScript files
+**/*.js
+**/*.js.map
+
+# Typescript v1 declaration files
+typings/
+
+/functions/node_modules/
+/functions/integration-tests/extensions/image-dinary.env
+/functions/lib/
+/functions/integration-tests/ui-debug.log
+/.idea/
