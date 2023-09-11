@@ -1,3 +1,4 @@
+-
 <!-- 
 This file provides your users an overview of your extension. All content is optional, but this is the recommended format. Your users will see the contents of this file when they run the `firebase ext:info` command.
 
@@ -7,9 +8,9 @@ Learn more about writing a PREINSTALL.md file in the docs:
 https://firebase.google.com/docs/extensions/publishers/user-documentation#writing-preinstall
 -->
 
-Use this extension to send a friendly greeting.
+Use this extension to get on-demand image edit
 
-When triggered by an HTTP request, this extension responds with your specified friendly greeting.
+When triggered by an HTTP request, this extension responds with an image with specific edition parameters like Resize, Quality and so on.
 
 <!-- We recommend keeping the following section to explain how billing for Firebase Extensions works -->
 # Billing
