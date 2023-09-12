@@ -40,6 +40,9 @@ billingRequired: true
 # In a `roles` field, list any IAM access roles required for your extension to operate.
 # Learn more in the docs:
 # https://firebase.google.com/docs/extensions/reference/extension-yaml#roles-field
+roles:
+  - role: storage.objects.get
+    reason: Allows the extension to read images in Cloud Storage
 
 # In the `resources` field, list each of your extension's functions, including the trigger for each function.
 # Learn more in the docs:
