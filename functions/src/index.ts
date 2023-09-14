@@ -7,7 +7,7 @@
  * Learn more about building extensions in the docs:
  * https://firebase.google.com/docs/extensions/publishers
  */
-import * as admin from "firebase-admin"
+import * as admin from "firebase-admin";
 import * as functions from "firebase-functions";
 import * as sharp from "sharp";
 import {ModifyImgRouter} from "./router/modify-router";

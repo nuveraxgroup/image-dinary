@@ -1,26 +1,26 @@
-import { logger } from "firebase-functions";
+import {logger} from "firebase-functions";
 
 export const tempOriginalFileDeleted = (path: string) => {
-    logger.log(`Deleted temporary original file: '${path}'`);
+  logger.log(`Deleted temporary original file: '${path}'`);
 };
 
 export const errorDeleting = (err: Error) => {
-    logger.warn("Error when deleting files", err);
+  logger.warn("Error when deleting files", err);
 };
 
 export const error = (err: Error) => {
-    logger.error("Error when modify image", err);
+  logger.error("Error when modify image", err);
 };
 
 export const createdTempDir = (dir: string) => {
-    logger.log("Created temporal directory", dir);
+  logger.log("Created temporal directory", dir);
 };
 export const downloadingFile = (filePath: string) => {
-    logger.log("Start file download", filePath);
+  logger.log("Start file download", filePath);
 };
 export const downloadedOriginalFileAt = (dir: string) => {
-    logger.log("Downloaded original file at location", dir);
+  logger.log("Downloaded original file at location", dir);
 };
 export const imageChanges = (change: string) => {
-    logger.log(`Changes made to image:`, change);
+  logger.log("Changes made to image:", change);
 };

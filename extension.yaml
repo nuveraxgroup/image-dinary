@@ -14,6 +14,9 @@ displayName: Image Dinary
 description: >-
   Get on-demand resize, scale and change quality of images in your Storage bucket.
 
+icon: logo.png
+tags: [utilities, image, cloud, edit-image]
+
 license: Apache-2.0  # https://spdx.org/licenses/
 
 author:

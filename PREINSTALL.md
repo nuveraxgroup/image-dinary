@@ -8,9 +8,9 @@ Learn more about writing a PREINSTALL.md file in the docs:
 https://firebase.google.com/docs/extensions/publishers/user-documentation#writing-preinstall
 -->
 
-Use this extension to get on-demand image edit
+Use this extension to get on-demand image edition
 
-When triggered by an HTTP request, this extension responds with an image with specific edition parameters like Resize, Quality and so on.
+When triggered by an HTTP request, this extension responds with an image with specific edition parameters like resizing, change quality and so on.
 
 <!-- We recommend keeping the following section to explain how billing for Firebase Extensions works -->
 # Billing
