@@ -1,13 +1,19 @@
-import axios from "axios";
+import axios, {AxiosError} from "axios";
 import { expect } from "chai";
 
 describe("image-dinary", () => {
-  it("should respond with the configured greeting", async () => {
-    const expected = "Hello World from image-dinary";
-
+  it("should respond 500 if file param not provided", async () => {
+    const expected = "Missing file param.";
     const httpFunctionUri = "http://localhost:5001/demo-test/us-central1/ext-image-dinary-modifyImg/";
-    const res = await axios.get(httpFunctionUri);
-
-    return expect(res.data).to.eql(expected);
+    try {
+      const res = await axios.get(httpFunctionUri);
+      expect(res.status).to.eql(200)
+      expect(res.data).to.eql(expected);
+    } catch (e) {
+      const error = e as AxiosError
+      const data = error.response?.data as any
+      expect(data.status).to.eql(500)
+      expect(data.message).to.eql(expected);
+    }
   }).timeout(10000);
 });
